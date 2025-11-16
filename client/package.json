@@ -1,0 +1,23 @@
+{
+"name": "mern-testing-client",
+"version": "1.0.0",
+"private": true,
+"scripts": {
+"start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test --env=jsdom --watchAll=false",
+"test:unit": "react-scripts test --testPathPattern=src/tests/unit --watchAll=false",
+"test:integration": "react-scripts test --testPathPattern=src/tests/integration --watchAll=false",
+"coverage": "react-scripts test --collectCoverage --coverageDirectory=coverage/client --watchAll=false"
+},
+"dependencies": {
+"react": "^18.0.0",
+"react-dom": "^18.0.0",
+"react-router-dom": "^6.0.0"
+},
+"devDependencies": {
+"@testing-library/react": "^14.0.0",
+"@testing-library/jest-dom": "^6.0.0",
+"cypress": "^12.0.0"
+}
+}
